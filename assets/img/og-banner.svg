@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="StrongPass.pro banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0a1a13"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(100,120)">
+    <rect x="0" y="0" width="200" height="200" rx="40" fill="#0bb56e"/>
+    <path d="M100 40c-30 0-56 26-56 56v20h-8c-6 0-10 4-10 10v44c0 6 4 10 10 10h128c6 0 10-4 10-10v-44c0-6-4-10-10-10h-8v-20c0-30-26-56-56-56zm0 18c21 0 38 17 38 38v20H62v-20c0-21 17-38 38-38z" fill="#073"/>
+    <circle cx="100" cy="152" r="12" fill="#fff"/>
+  </g>
+  <text x="340" y="190" font-size="64" font-family="Segoe UI, Roboto, Ubuntu, Arial, sans-serif" fill="#e6edf3" font-weight="700">StrongPass.pro</text>
+  <text x="340" y="240" font-size="28" font-family="Segoe UI, Roboto, Ubuntu, Arial, sans-serif" fill="#9aa4b2">Free Strong Password Generator</text>
+  <text x="340" y="300" font-size="22" font-family="Segoe UI, Roboto, Ubuntu, Arial, sans-serif" fill="#cbd5e1">Client‑side • Mobile‑first • One‑click copy • Presets • Passphrases • Bulk</text>
+</svg>
