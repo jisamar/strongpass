@@ -1,0 +1,12 @@
+{
+  "name": "StrongPass.pro — Strong Password Generator",
+  "short_name": "StrongPass",
+  "description": "Generate strong passwords and memorable passphrases client‑side. Presets, bulk, strength meter, and more.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0bb56e",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

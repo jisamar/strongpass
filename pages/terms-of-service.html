@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — StrongPass.pro</title>
+  <meta name="description" content="StrongPass.pro Terms of Service. Use at your own risk. No warranties. Learn the conditions for using our password generator." />
+  <link rel="canonical" href="https://strongpass.pro/pages/terms-of-service.html" />
+  <link rel="icon" href="../assets/img/favicon.svg" />
+  <meta name="theme-color" content="#0b5" />
+  <meta name="color-scheme" content="dark light" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2240VBHQK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    if(!(location.hostname === '127.0.0.1' || location.hostname === 'localhost')){
+      gtag('config', 'G-Y2240VBHQK');
+    } else {
+      gtag('config', 'G-Y2240VBHQK', { 'debug_mode': true, 'send_page_view': false });
+    }
+  </script>
+  <script>
+    (function(){
+      try{
+        var t = localStorage.getItem('theme');
+        if(!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){ t = 'light'; }
+        if(t === 'light'){ document.documentElement.setAttribute('data-theme','light'); }
+        var m = document.querySelector('meta[name="theme-color"]');
+        if(m){ m.setAttribute('content', t === 'light' ? '#ffffff' : '#0d1117'); }
+      }catch(e){}
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><img src="../assets/img/logo.svg" width="28" height="28" alt="StrongPass.pro" /><span>StrongPass.pro</span></a>
+      <nav class="nav">
+        <a href="../index.html">Generator</a>
+        <a href="how-to-create-strong-passwords-2025-guide.html">How-To</a>
+        <a href="password-security-guide.html">Security Guide</a>
+        <a href="common-password-mistakes.html">Mistakes</a>
+        <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Switch to light theme" title="Switch to light theme">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h1 class="mt-0">Terms of Service</h1>
+    <p>Effective date: 2025-08-27</p>
+
+    <h2>Acceptance of terms</h2>
+    <p>By accessing or using StrongPass.pro, you agree to these Terms of Service and to comply with applicable laws.</p>
+
+    <h2>Use of the site</h2>
+    <ul>
+      <li>You may use the generator for personal or business purposes.</li>
+      <li>Do not misuse or attempt to disrupt the site or its resources.</li>
+    </ul>
+
+    <h2>No warranties</h2>
+    <p>StrongPass.pro is provided “as is” without warranties of any kind. We do not guarantee that passwords will meet all third‑party requirements.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, StrongPass.pro and its contributors are not liable for any damages arising from the use of this site.</p>
+
+    <h2>Changes</h2>
+    <p>We may modify these Terms at any time by posting an updated version on this page.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:support@strongpass.pro">support@strongpass.pro</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="contact.html">Contact</a>
+        <a href="../sitemap.xml">Sitemap</a>
+      </nav>
+      <p class="small">Privacy‑friendly: generation happens locally in your browser using the Web Crypto API. We never store or transmit your passwords.</p>
+      <p class="copyright">© <span id="year"></span> StrongPass.pro</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js" defer></script>
+</body>
+</html>

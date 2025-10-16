@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>File Path Test</h1>
+    <div id="results">
+        <p>Testing file paths...</p>
+    </div>
+
+    <script>
+        const filesToTest = [
+            '/assets/css/styles.css',
+            '/assets/js/app.js',
+            '/assets/img/logo.svg',
+            '/manifest.webmanifest'
+        ];
+
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = '<p>Testing file paths...</p>';
+
+        async function testFile(file) {
+            try {
+                const response = await fetch(file);
+                if (response.ok) {
+                    return `<p class="success">✓ Found: ${file}</p>`;
+                } else {
+                    return `<p class="error">✗ Not found (${response.status}): ${file}</p>`;
+                }
+            } catch (error) {
+                return `<p class="error">✗ Error loading: ${file} (${error})</p>`;
+            }
+        }
+
+        async function runTests() {
+            let results = '<h2>Test Results</h2>';
+            for (const file of filesToTest) {
+                results += await testFile(file);
+            }
+            resultsDiv.innerHTML = results;
+        }
+
+        // Run tests when page loads
+        window.onload = runTests;
+    </script>
+</body>
+</html>
